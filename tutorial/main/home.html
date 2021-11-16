@@ -1,0 +1,20 @@
+{<head>
+    <{% load static %}
+    <!-- Prism CSS -->
+    <link href="{% static "tinymce/css/prism.css" %}" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="http//cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    </head>
+    
+    <body>
+    
+    {% for tut in tutorials %}
+        <p>{{tut.tutorial_title}}</p>
+        <p>{{tut.tutorial_published}}</p>
+        <p>{{tutorial_content}}</p>
+        <br><br>
+    {% endfor %} 
+    
+    <!-- Prism JS-->
+    <script src="{% static "Tinymce/js/prism.js" %}></script>
+    </body>
